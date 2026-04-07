@@ -8,11 +8,8 @@ Static GitHub Pages landing page for PepLink.
 2. In GitHub, open `Settings` → `Pages`.
 3. Set `Build and deployment` to `Deploy from a branch`.
 4. Select the publishing branch and the `/ (root)` folder, then save.
-5. Replace the placeholder site URL in:
-   - `index.html`
-   - `robots.txt`
-   - `sitemap.xml`
-6. If you add a custom domain, update the canonical URL and social image URLs to match that domain.
+5. The current site URL is set to `https://dragondescentzerotsu.github.io/PepLink_Page/`.
+6. If you add a custom domain, update the canonical URL, sitemap URL, and social image URLs to match that domain.
 
 ## Included Files
 

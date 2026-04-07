@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace with your final GitHub Pages sitemap URL.
-Sitemap: https://example.com/peplink/sitemap.xml
+Sitemap: https://dragondescentzerotsu.github.io/PepLink_Page/sitemap.xml
