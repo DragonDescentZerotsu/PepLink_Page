@@ -317,7 +317,8 @@ h3 {
 .stat-panel,
 .interface-card,
 .dependency-note,
-.cta-panel {
+.cta-panel,
+.citation-card {
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   background: rgba(255, 253, 250, 0.9);
@@ -341,7 +342,8 @@ h3 {
 .faq-list p,
 .site-footer p,
 .audience-list li,
-.interface-list li {
+.interface-list li,
+.citation-intro {
   color: var(--muted);
 }
 
@@ -468,6 +470,14 @@ h3 {
 
 .final-cta {
   padding-top: 4rem;
+}
+
+.citation-card {
+  padding: 1.5rem;
+}
+
+.citation-intro {
+  margin: 0 0 1rem;
 }
 
 .cta-panel {
