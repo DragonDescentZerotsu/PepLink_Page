@@ -257,15 +257,10 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.button-secondary {
+.button-secondary,
+.button-hf {
   border-color: var(--line-strong);
   background: rgba(255, 255, 255, 0.78);
-  color: var(--ink);
-}
-
-.button-hf {
-  border-color: rgba(24, 32, 37, 0.1);
-  background: rgba(255, 255, 255, 0.9);
   color: var(--ink);
 }
 
