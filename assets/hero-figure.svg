@@ -1,0 +1,80 @@
+<svg width="760" height="620" viewBox="0 0 760 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">PepLink peptide conversion schematic</title>
+  <desc id="desc">A modern diagram showing peptide sequence conversion into SMILES and SELFIES plus structured peptide parsing.</desc>
+  <rect width="760" height="620" rx="32" fill="#FCFBF7"/>
+  <rect x="22" y="22" width="716" height="576" rx="26" fill="url(#bg)" stroke="#D6D4CA"/>
+  <circle cx="118" cy="108" r="78" fill="#E6F4EE"/>
+  <circle cx="646" cy="508" r="92" fill="#EEF3F1"/>
+  <path d="M160 296H600" stroke="#BFC8C2" stroke-width="2" stroke-dasharray="8 10"/>
+  <path d="M242 284L276 296L242 308" stroke="#1C7A67" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M484 284L518 296L484 308" stroke="#1C7A67" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g filter="url(#shadow)">
+    <rect x="54" y="162" width="180" height="270" rx="22" fill="#FFFDF9"/>
+    <rect x="290" y="118" width="180" height="360" rx="22" fill="#FFFDF9"/>
+    <rect x="526" y="168" width="180" height="260" rx="22" fill="#FFFDF9"/>
+  </g>
+
+  <text x="82" y="204" fill="#0E2620" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Peptide input</text>
+  <text x="82" y="228" fill="#476058" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="14">Sequence + metadata</text>
+  <rect x="82" y="258" width="124" height="36" rx="10" fill="#ECF7F3" stroke="#B9D7CE"/>
+  <text x="96" y="281" fill="#0F5C4C" font-family="SFMono-Regular, Consolas, monospace" font-size="15">RRXXRF</text>
+  <text x="82" y="328" fill="#476058" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="14">Unusual residues</text>
+  <text x="82" y="352" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="13">3: 1-NAL</text>
+  <text x="82" y="374" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="13">4: 1-NAL</text>
+  <text x="82" y="404" fill="#476058" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="14">Terminal mods</text>
+  <text x="82" y="428" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="13">N: ACT</text>
+  <text x="154" y="428" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="13">C: AMD</text>
+
+  <text x="318" y="160" fill="#0E2620" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Molecular strings</text>
+  <text x="318" y="184" fill="#476058" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="14">Canonical export formats</text>
+  <rect x="318" y="214" width="124" height="34" rx="10" fill="#F4F3EC" stroke="#D8D4C8"/>
+  <text x="334" y="236" fill="#476058" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">SMILES</text>
+  <text x="318" y="274" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="12">N[C@@H](...)C(=O)N...</text>
+  <text x="318" y="302" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="12">C1CCN(CC1)C(=O)...</text>
+  <rect x="318" y="338" width="124" height="34" rx="10" fill="#ECF7F3" stroke="#B9D7CE"/>
+  <text x="333" y="360" fill="#0F5C4C" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">SELFIES</text>
+  <text x="318" y="398" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="12">[N][C@@H1][Branch1]...</text>
+  <text x="318" y="426" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="12">[C][C@H1][N][C]...</text>
+
+  <text x="554" y="208" fill="#0E2620" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="17" font-weight="700">Structured parse</text>
+  <text x="554" y="232" fill="#476058" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="14">PeptideParseResult</text>
+  <rect x="554" y="264" width="124" height="34" rx="10" fill="#EEF3F1" stroke="#CCD4D0"/>
+  <text x="568" y="286" fill="#476058" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">SMILES → peptide</text>
+  <text x="554" y="332" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="12">sequence: AC</text>
+  <text x="554" y="356" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="12">is_cyclic: False</text>
+  <text x="554" y="380" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="12">cyclization: linear</text>
+  <text x="554" y="404" fill="#0E2620" font-family="SFMono-Regular, Consolas, monospace" font-size="12">unsupported_reason: None</text>
+
+  <g opacity="0.94">
+    <circle cx="116" cy="112" r="9" fill="#1C7A67"/>
+    <circle cx="146" cy="98" r="9" fill="#77BCA9"/>
+    <circle cx="176" cy="114" r="9" fill="#1C7A67"/>
+    <circle cx="206" cy="96" r="9" fill="#77BCA9"/>
+    <path d="M116 112L146 98L176 114L206 96" stroke="#0F5C4C" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.8">
+    <circle cx="628" cy="468" r="8" fill="#1C7A67"/>
+    <circle cx="654" cy="486" r="8" fill="#77BCA9"/>
+    <circle cx="680" cy="464" r="8" fill="#1C7A67"/>
+    <path d="M628 468L654 486L680 464" stroke="#0F5C4C" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <defs>
+    <linearGradient id="bg" x1="380" y1="22" x2="380" y2="598" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFEFB"/>
+      <stop offset="1" stop-color="#F6F4EE"/>
+    </linearGradient>
+    <filter id="shadow" x="38" y="102" width="684" height="392" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="8"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0941176 0 0 0 0 0.12549 0 0 0 0 0.117647 0 0 0 0.08 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+  </defs>
+</svg>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PepLink: Peptide to SMILES, SMILES to Peptide</title>
+    <meta
+      name="description"
+      content="PepLink supports peptide to SMILES, smiles to peptide, cyclic peptide SMILES workflows, non-canonical amino acid support, and peptide SELFIES export."
+    >
+    <meta
+      name="keywords"
+      content="PepLink, peptide to smiles, smiles to peptide, peptide sequence to smiles, cyclic peptide smiles, non-canonical amino acid, peptide selfies, cheminformatics, computational biology"
+    >
+    <meta name="robots" content="index,follow">
+    <meta name="theme-color" content="#f5f4ef">
+    <!-- Replace with your final GitHub Pages URL. -->
+    <link rel="canonical" href="https://example.com/peplink/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="PepLink">
+    <meta property="og:title" content="PepLink: Peptide to SMILES, SMILES to Peptide">
+    <meta
+      property="og:description"
+      content="PepLink converts peptide sequences to SMILES or SELFIES and helps interpret peptide-like SMILES for practical peptide informatics workflows."
+    >
+    <!-- Replace with your final GitHub Pages URL. -->
+    <meta property="og:url" content="https://example.com/peplink/">
+    <!-- Replace with the final absolute URL for the social preview image. -->
+    <meta property="og:image" content="https://example.com/peplink/assets/og-preview.svg">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="PepLink landing page preview">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PepLink: Peptide to SMILES, SMILES to Peptide">
+    <meta
+      name="twitter:description"
+      content="PepLink converts peptide sequences to SMILES or SELFIES and helps interpret peptide-like SMILES for practical peptide informatics workflows."
+    >
+    <!-- Replace with the final absolute URL for the social preview image. -->
+    <meta name="twitter:image" content="https://example.com/peplink/assets/og-preview.svg">
+    <meta name="twitter:image:alt" content="PepLink landing page preview">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PepLink",
+        "applicationCategory": "ScientificApplication",
+        "operatingSystem": "Cross-platform",
+        "softwareVersion": "0.1.0",
+        "description": "PepLink is a Python package for peptide to SMILES, peptide SELFIES export, and conservative smiles to peptide workflows covering non-canonical amino acid support, selected cyclic peptide SMILES cases, and terminal modifications in forward generation.",
+        "url": "https://example.com/peplink/",
+        "codeRepository": "https://github.com/DragonDescentZerotsu/PepLink",
+        "programmingLanguage": "Python",
+        "license": "https://github.com/DragonDescentZerotsu/PepLink/blob/main/LICENSE",
+        "keywords": [
+          "peptide to smiles",
+          "smiles to peptide",
+          "peptide sequence to smiles",
+          "cyclic peptide smiles",
+          "non-canonical amino acid",
+          "peptide selfies"
+        ],
+        "featureList": [
+          "Peptide sequence to SMILES conversion",
+          "Peptide sequence to SELFIES conversion",
+          "Conservative smiles to peptide parsing",
+          "Non-canonical amino acid support",
+          "Terminal modification support in forward generation",
+          "Selected cyclic and intramolecularly linked peptide workflows"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="PepLink home">
+          <span class="brand-wordmark">PepLink</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#why">Why</a>
+          <a href="#workflows">Workflows</a>
+          <a href="#integration">Integration</a>
+          <a href="#installation">Installation</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero section" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Practical peptide to SMILES and smiles to peptide workflows</p>
+            <h1>PepLink: Peptide Sequence ↔ SMILES/SELFIES Conversion</h1>
+            <p class="lead">
+              Convert peptide sequences into SMILES or peptide SELFIES, and interpret peptide-like SMILES with support
+              for non-canonical amino acids, cyclic or intramolecularly linked peptides, and terminal modifications in
+              forward workflows.
+            </p>
+            <div class="cta-row">
+              <a class="button button-primary" href="https://github.com/DragonDescentZerotsu/PepLink">View on GitHub</a>
+              <a
+                class="button button-hf"
+                href="https://huggingface.co/spaces/Kiria-Nozan/PepLink"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="button-logo"
+                  src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg"
+                  alt="Hugging Face logo"
+                  width="26"
+                  height="26"
+                >
+                <span>Web Tool</span>
+              </a>
+              <a class="button button-secondary" href="#installation">Get Started</a>
+            </div>
+            <p class="scope-note">
+              Forward conversion supports broader peptide construction. Reverse parsing is intentionally conservative and
+              focused on standard peptide-like molecules within PepLink v1's documented scope.
+            </p>
+          </div>
+
+          <div class="hero-visual">
+            <img
+              src="assets/hero-figure.svg"
+              alt="PepLink schematic showing peptide sequence conversion to SMILES, SELFIES, and structured peptide parsing"
+              width="760"
+              height="620"
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" aria-labelledby="value-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">What PepLink does well</p>
+            <h2 id="value-title">A compact tool for peptide representation conversion</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Peptide sequence to SMILES or SELFIES</h3>
+              <p>
+                Use <code>aa_seqs_to_smiles(...)</code> to export a peptide sequence to canonical SMILES or peptide
+                SELFIES for downstream chemistry and dataset workflows.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>SMILES to peptide-oriented parsing</h3>
+              <p>
+                Use <code>smiles_to_aa_seqs(...)</code> when you need a practical smiles to peptide step for standard
+                peptide-like molecules, including linear peptides and head-to-tail cyclic peptides, with structured
+                output and explicit unsupported reasons.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Non-canonical amino acid support</h3>
+              <p>
+                PepLink ships with 420 bundled non-canonical amino acid mappings and also supports runtime registration
+                of custom residues for peptide sequence to smiles pipelines.
+              </p>
+            </article>
+            <article class="feature-card">
+              <h3>Cyclic, linked, and terminally modified peptides</h3>
+              <p>
+                Forward generation covers selected cyclic peptide SMILES cases, intramolecular linkage classes, and
+                bundled N- and C-terminal modifications without pretending to solve all peptide chemistry.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="why" aria-labelledby="why-title">
+        <div class="container narrow">
+          <div class="section-heading">
+            <p class="eyebrow">Why PepLink</p>
+            <h2 id="why-title">Built for peptide workflows that exceed canonical linear cases</h2>
+          </div>
+          <p>
+            Many peptide conversion utilities are optimized for canonical linear sequences, one-way export, or narrowly
+            curated amino-acid sets. That makes straightforward peptide to SMILES tasks possible, but it leaves gaps
+            when your workflow includes a non-canonical amino acid, a cyclic peptide SMILES target, or terminal
+            modifications that matter to the final structure.
+          </p>
+          <p>
+            PepLink is useful when you need practical conversion rather than a generic chemistry marketing page. Its
+            forward builder is designed around monomer peptides, bundled residue mappings, selected cyclic and
+            intramolecularly linked peptide topologies, and terminal modifications. The reverse parser is deliberately
+            narrower: it focuses on standard amino-acid peptides, with support centered on linear peptides and
+            head-to-tail cyclic peptides, and clearly reports when a molecule falls outside its reliable scope.
+          </p>
+          <p>
+            That split makes PepLink credible for research software and agent automation. You can rely on the forward
+            direction for richer peptide construction, and you can use reverse parsing when a conservative smiles to
+            peptide interpretation is the safer choice.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="workflows" aria-labelledby="workflow-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Example workflows</p>
+            <h2 id="workflow-title">Readable APIs for common peptide informatics tasks</h2>
+          </div>
+          <div class="workflow-grid">
+            <article class="workflow-card">
+              <div class="card-label">Sequence → SMILES</div>
+              <h3><code>aa_seqs_to_smiles(...)</code></h3>
+              <p>
+                A realistic forward example with non-canonical residues plus terminal modifications. This is the core
+                peptide sequence to smiles workflow.
+              </p>
+              <pre><code>from PepLink import aa_seqs_to_smiles
+
+smiles = aa_seqs_to_smiles(
+    "RRXXRF",
+    unusual_amino_acids=[
+        {"position": 3, "name": "1-NAL"},
+        {"position": 4, "name": "1-NAL"},
+    ],
+    n_terminal="ACT",
+    c_terminal="AMD",
+)</code></pre>
+            </article>
+
+            <article class="workflow-card">
+              <div class="card-label">Custom residue registration</div>
+              <h3><code>register_noncanonical_aa(...)</code></h3>
+              <p>
+                Extend PepLink with your own non-canonical amino acid mappings directly in Python when bundled residue
+                mappings are not enough for your workflow.
+              </p>
+              <pre><code>from PepLink import (
+    aa_seqs_to_smiles,
+    register_noncanonical_aa,
+)
+
+register_noncanonical_aa("MyAA", "N[C@@H](CC)C(=O)O")
+
+smiles = aa_seqs_to_smiles(
+    "AXA",
+    unusual_amino_acids=[{"position": 2, "name": "MyAA"}],
+)</code></pre>
+            </article>
+
+            <article class="workflow-card">
+              <div class="card-label">SMILES → Peptide interpretation</div>
+              <h3><code>smiles_to_aa_seqs(...)</code></h3>
+              <p>
+                Reverse parsing returns a structured <code>PeptideParseResult</code>. It is best suited to standard
+                peptide-like molecules, including linear and head-to-tail cases.
+              </p>
+              <pre><code>from PepLink import smiles_to_aa_seqs
+
+result = smiles_to_aa_seqs(
+    "C[C@H](N)C(=O)N[C@@H](CS)C(=O)O"
+)
+
+print(result.sequence)            # AC
+print(result.is_cyclic)           # False
+print(result.cyclization)         # linear
+print(result.unsupported_reason)  # None</code></pre>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="audience-title">
+        <div class="container audience-grid">
+          <div>
+            <div class="section-heading left-aligned">
+              <p class="eyebrow">Who it is for</p>
+              <h2 id="audience-title">Useful across research, pipelines, and tooling</h2>
+            </div>
+            <ul class="audience-list">
+              <li>Peptide design workflows that need explicit sequence-to-structure conversion.</li>
+              <li>Cheminformatics preprocessing for peptide datasets, descriptors, and model inputs.</li>
+              <li>Dataset generation where peptide sequence to smiles or peptide selfies export must be repeatable.</li>
+              <li>Agent and tool integration where a backend needs deterministic peptide representation conversion.</li>
+              <li>Educational and research prototyping that benefits from a practical Python API instead of a large stack.</li>
+            </ul>
+          </div>
+          <aside class="stat-panel" aria-label="PepLink scope summary">
+            <div class="stat-item">
+              <strong>420</strong>
+              <span>bundled non-canonical amino acid mappings</span>
+            </div>
+            <div class="stat-item">
+              <strong>296</strong>
+              <span>bundled terminal modifications across N- and C-termini</span>
+            </div>
+            <div class="stat-item">
+              <strong>3</strong>
+              <span>cyclic or intramolecular topology classes in forward construction</span>
+            </div>
+            <div class="stat-item">
+              <strong>11</strong>
+              <span>implemented intrachain bond chemistries in the documented v1 scope</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="integration" aria-labelledby="integration-title">
+        <div class="container integration-grid">
+          <div class="integration-copy">
+            <div class="section-heading left-aligned">
+              <p class="eyebrow">Agent and tool integration</p>
+              <h2 id="integration-title">A practical backend for automation and AI agents</h2>
+            </div>
+            <p>
+              PepLink is a good fit when peptide conversion needs to sit behind an API, an MCP-compatible tool wrapper,
+              a workflow engine, or a lightweight Python service. The forward API accepts structured fields for residue
+              overrides, unusual amino acids, intrachain bonds, and terminal modifications. The reverse API returns a
+              structured <code>PeptideParseResult</code> instead of only a raw string.
+            </p>
+            <p>
+              That makes the package useful for AI agents and tool builders that need deterministic peptide conversion,
+              explicit failure handling, and data that can be fed into larger automation chains without brittle text
+              parsing.
+            </p>
+          </div>
+          <div class="interface-card">
+            <h3>Programmatic shape</h3>
+            <ul class="interface-list">
+              <li><code>aa_seqs_to_smiles(sequence, ..., output_format="smiles" | "selfies") -&gt; str</code></li>
+              <li><code>smiles_to_aa_seqs(text, *, input_format="auto") -&gt; PeptideParseResult</code></li>
+              <li><code>register_noncanonical_aa(...)</code> and CSV helpers for custom residue support</li>
+              <li><code>unsupported_reason</code> gives automation-friendly failure context</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="installation" aria-labelledby="installation-title">
+        <div class="container install-grid">
+          <div>
+            <div class="section-heading left-aligned">
+              <p class="eyebrow">Installation</p>
+              <h2 id="installation-title">Start with a minimal Python install</h2>
+            </div>
+            <pre class="install-block"><code>pip install PepLink</code></pre>
+            <pre><code>from PepLink import aa_seqs_to_smiles
+
+smiles = aa_seqs_to_smiles("AC")
+print(smiles)</code></pre>
+            <p class="install-note">
+              PepLink is a Python package for peptide sequence to smiles, peptide selfies export, and conservative
+              peptide-oriented interpretation of SMILES within its current documented scope.
+            </p>
+          </div>
+          <aside class="dependency-note">
+            <h3>Runtime notes</h3>
+            <p><code>rdkit</code> and <code>selfies</code> are listed as runtime dependencies in the project metadata.</p>
+            <p><code>SELFIES</code> output requires the <code>selfies</code> dependency to be available at runtime.</p>
+            <p>Source, issues, releases, and examples are available in the GitHub repository.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="faq" aria-labelledby="faq-title">
+        <div class="container narrow">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-title">Common questions</h2>
+          </div>
+
+          <div class="faq-list">
+            <details>
+              <summary>What kinds of peptides does PepLink target?</summary>
+              <p>
+                PepLink v1 focuses on monomer peptides. Forward generation supports canonical residues, D-forms, bundled
+                non-canonical mappings, selected cyclic or intramolecularly linked peptide definitions, and terminal
+                modifications.
+              </p>
+            </details>
+
+            <details>
+              <summary>Can I define custom non-canonical amino acids?</summary>
+              <p>
+                Yes. PepLink includes bundled non-canonical amino acid mappings for forward workflows, and it also lets
+                you register your own custom residues programmatically or load them from CSV when needed.
+              </p>
+            </details>
+
+            <details>
+              <summary>Can it help with cyclic peptide representations?</summary>
+              <p>
+                Yes for selected forward-generation cases, including documented cyclic and intramolecular linkage
+                classes. The reverse parser is more conservative and officially narrower than the forward builder.
+              </p>
+            </details>
+
+            <details>
+              <summary>Is it suitable for automation or agent workflows?</summary>
+              <p>
+                Yes. PepLink exposes predictable Python functions, structured reverse outputs, and explicit unsupported
+                reasons, which makes it practical for API wrappers, MCP tools, and AI-agent backends.
+              </p>
+            </details>
+
+            <details>
+              <summary>Where can I find the source code and documentation?</summary>
+              <p>
+                Start with the GitHub repository for source, README examples, issues, and releases:
+                <a href="https://github.com/DragonDescentZerotsu/PepLink">github.com/DragonDescentZerotsu/PepLink</a>.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta" aria-labelledby="final-cta-title">
+        <div class="container cta-panel">
+          <div>
+            <p class="eyebrow">Try PepLink</p>
+            <h2 id="final-cta-title">Install the package, explore the examples, and use it in your peptide pipeline</h2>
+            <p>
+              If you need peptide to SMILES conversion, peptide SELFIES export, or a conservative smiles to peptide
+              utility for automation, PepLink is ready to evaluate in a lightweight Python workflow.
+            </p>
+          </div>
+          <div class="cta-row">
+            <a class="button button-primary" href="https://github.com/DragonDescentZerotsu/PepLink">Star the Repo</a>
+            <a class="button button-secondary" href="https://github.com/DragonDescentZerotsu/PepLink#quick-start">Review Examples</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>PepLink is a research software project for peptide sequence ↔ molecular string conversion.</p>
+        <p>
+          Replace the placeholder canonical and sitemap URLs before publishing this page on GitHub Pages.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="40" fill="#F5F4EF"/>
+  <rect x="30" y="30" width="1140" height="570" rx="32" fill="#FFFDF9" stroke="#D7D4C8"/>
+  <circle cx="1032" cy="116" r="118" fill="#E8F5F0"/>
+  <circle cx="194" cy="546" r="142" fill="#F0F3EE"/>
+  <text x="88" y="144" fill="#0F5C4C" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="0.12em">PEPLINK</text>
+  <text x="88" y="248" fill="#182025" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="66" font-weight="700">Peptide to SMILES,</text>
+  <text x="88" y="322" fill="#182025" font-family="Iowan Old Style, Palatino Linotype, serif" font-size="66" font-weight="700">SMILES to Peptide</text>
+  <text x="88" y="392" fill="#526067" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="28">Non-canonical amino acids, peptide SELFIES, cyclic peptide SMILES,</text>
+  <text x="88" y="430" fill="#526067" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="28">terminal modifications, and structured peptide parsing.</text>
+
+  <rect x="88" y="482" width="252" height="54" rx="27" fill="#182025"/>
+  <text x="122" y="516" fill="#FFFFFF" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">View repo on GitHub</text>
+
+  <g opacity="0.96">
+    <rect x="770" y="198" width="308" height="196" rx="28" fill="#FCFBF7" stroke="#DAD6CB"/>
+    <text x="808" y="250" fill="#182025" font-family="Avenir Next, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Structured workflow</text>
+    <text x="808" y="292" fill="#0F5C4C" font-family="SFMono-Regular, Consolas, monospace" font-size="20">sequence -> smiles</text>
+    <text x="808" y="326" fill="#0F5C4C" font-family="SFMono-Regular, Consolas, monospace" font-size="20">sequence -> selfies</text>
+    <text x="808" y="360" fill="#0F5C4C" font-family="SFMono-Regular, Consolas, monospace" font-size="20">smiles -> peptide</text>
+  </g>
+
+  <g opacity="0.95">
+    <circle cx="810" cy="112" r="14" fill="#1C7A67"/>
+    <circle cx="850" cy="88" r="14" fill="#80C2B0"/>
+    <circle cx="892" cy="112" r="14" fill="#1C7A67"/>
+    <circle cx="934" cy="88" r="14" fill="#80C2B0"/>
+    <path d="M810 112L850 88L892 112L934 88" stroke="#0F5C4C" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
